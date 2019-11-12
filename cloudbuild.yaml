@@ -5,12 +5,10 @@ steps:
   args: ['install']
 
 # Run Build command
-steps:
 - name: node:10.15.1
   entrypoint: npm
   args: ['run', 'build']
 
 # Upload to Storage Bucket
-steps:
-  - name: gcr.io/cloud-builders/gsutil
-    args: ["-m", "rsync", "-r", "-c", "-d", "./dist/git-ci-cd/", "gs://git-ci-cd"]
+- name: gcr.io/cloud-builders/gsutil
+  args: ["-m", "rsync", "-r", "-c", "-d", "./dist/git-ci-cd/", "gs://git-ci-cd"]
