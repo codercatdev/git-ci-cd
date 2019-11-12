@@ -1,6 +1,6 @@
 # GitCiCd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-rc.1.
+This repo is used for AJonP's Git Build CI/CD lesson https://ajonp.com/lessons/git-your-build-system-right.
 
 ## Development server
 
